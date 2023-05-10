@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary--text-color : #183b56;
+    --secondary-text-color :#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--primary--text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;   
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+/* UTILITY CLASSES */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contanier{
+    max-width: 1180px;
+    /* margin-inline: auto; */
+    margin: auto;
+    padding-inline: 20px;
+   
+
+}
+
+.fle{
+    display: flex;
+    align-items: center;
+
+}
+
+.hover-links{
+    color: var(--primary--text-color);
+}
+.hover-links:hover{
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+.secondary-button{
+    border: 1px solid var(--secondary-text-color);
+    /* background-color: var(--accent-color); */
+    border-radius: 6px;
+    font-weight: 700;
+    /* color: rgb(211, 204, 204)!important; */
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(0, 0, 247);
+}
+.secondary-button:hover{
+    border-color:var(--accent-color) ;
+}
+.primary-button{
+    border: 1px solid var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: rgb(255, 255, 255)!important;
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(90, 90, 143);
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+
+
+/* Styling all the Classes and element */
+.top-banner{
+    background-color: #4da5e7;
+    background-image: url("./assets/asset\ 32.png");
+    background-size: 300px;
+}
+
+.banner-text{
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+
+}
+.company-logo img{
+    width: 200px;
+
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/* HEADER */
+
+
+header{
+    padding: 50px 20px;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+.header-right img{
+    width: 600px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+    /* background-image: linear-gradient(red, blue); */
+    text-shadow: 2px 2px 5px rgb(38, 143, 204);
+}
+
+.header-left p{
+    margin: 20px 0px;
+}
+
+/* Company-Section */
+.logo-top{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-top img{
+    width: 10rem;
+    height: 4rem;
+}
+.companies-header{
+    text-align: center;
+    margin: 10px 0px;
+    color: var(--primary--text-color);
+}
+
+/*  Features-Section */
+.features-section{
+    margin-top: 50px;
+    background-image: url(./assets/);
+}
+
+.features-header a{
+    margin-top: 20px;
+}
+
+.features-header{
+   
+    margin-top: 10px;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.features-section{
+    margin-top:20px ;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+
+.features-card{
+    gap: 30px;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 20px 0px;
+    text-align: center;
+    
+    
+}
+.features-area{
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px;
+    
+}
+.big-features-contanier{
+    gap: 40px;
+}
+
+.feature-desc{
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.feature-img img{
+    width: 100%;
+}
+.feature-desc a img{
+    width: 60%;
+}
+
+/*  example-section */
+.example-section{
+    margin-top: 20px;
+}
+.example-area{
+    justify-content: space-between;
+    /* gap: 30px; */
+    margin-top: 20px;
+    
+}
+
+.example-section{
+    margin-top: 20px;
+}
+
+.example-card{
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(./assets/asset\ 36.jpeg);
+    min-height:350px;
+    position: relative;
+    width: 22% ;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-out;
+    
+    
+}   
+.example-card:hover{
+    box-shadow: 0 0 10px 2px rgb(83, 75, 75);
+  
+
+    
+}
+.card-text{
+    /* position: relative; */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: rgb(255, 255, 255);
+    /* flex-direction: column; */
+    
+    /* text-align:center ; */
+    /* justify-content: baseline; */
+    
+}
+
+/*  Cta section */
+
+.cta-section{
+    background-color: #558fbb;
+    margin-top:20px ;
+}
+
+
+.contanier-test {
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: start; */
+    align-items: start;
+    
+    max-width: 40vw;
+    
+}
+.cta-section-image img{
+    width: 100%;
+
+}
+.cta-section-class{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.last-section-class{
+    text-align: center;
+    margin-top :120px ;
+}
+.last-section-class h4 {
+    margin: 20px 0px;
+    color: rgb(120, 156, 185);
+}
+
+.link-column {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+.footer-section{
+    margin-top: 40px;
+    background-color: #ebf2fa;
+    padding: 30px 0px;
+}
+.footer-section-main{
+    justify-content: space-between;
+    align-items: start;
+}
+.sub-footer-contanier {
+    gap:30px ;
+   
+    justify-content: center;
+}
+.sub-footer{
+    margin-top: 5px;
+    background-color: #cbd6df;
+    padding: 30px 0px;
+}
